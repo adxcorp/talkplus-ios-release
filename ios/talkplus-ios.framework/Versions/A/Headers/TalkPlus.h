@@ -57,12 +57,15 @@
 -(void)markAsReadChannel:(TPChannel *)tpChannel success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)markAsReadAllChannel:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)freezeChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)unfreezeChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)hideChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)hideAllChannel:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)showChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)joinChannel:(NSString *)channelId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)joinChannel:(NSString *)channelId invitationCode:(NSString *)invitationCode success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)leaveChannel:(TPChannel *)tpChannel success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)leaveChannel:(TPChannel *)tpChannel deleteChannelIfEmpty:(BOOL)deleteChannelIfEmpty success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)addMemberToChannel:(TPChannel *)tpChannel userId:(NSString *)userId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)addMemberToChannel:(TPChannel *)tpChannel userIds:(NSArray *)userIds success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
