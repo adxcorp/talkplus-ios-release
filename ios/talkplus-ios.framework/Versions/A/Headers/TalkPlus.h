@@ -47,9 +47,9 @@
 -(void)getChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray * tpChannelArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getHiddenChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray * tpChannelArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
--(void)createChannelWithUserId:(NSString *)targetId channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)updateChannel:(TPChannel *)tpChannel channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)createChannelWithUserId:(NSString *)targetId channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)updateChannel:(TPChannel *)tpChannel channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray * tpChannelArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -76,6 +76,11 @@
 -(void)banMemberToChannel:(TPChannel *)tpChannel userIds:(NSArray *)userIds success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)unBanMemberToChannel:(TPChannel *)tpChannel userId:(NSString *)userId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)unBanMemberToChannel:(TPChannel *)tpChannel userIds:(NSArray *)userIds success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)muteMemberToChannel:(TPChannel *)tpChannel userId:(NSString *)userId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)muteMemberToChannel:(TPChannel *)tpChannel userIds:(NSArray *)userIds success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)unMuteMemberToChannel:(TPChannel *)tpChannel userId:(NSString *)userId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)unMuteMemberToChannel:(TPChannel *)tpChannel userIds:(NSArray *)userIds success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)addChannelDelegate:(id<TPChannelDelegate>)delegate tag:(NSString *)tag;
 -(void)removeChannelDelegate:(NSString *)tag;

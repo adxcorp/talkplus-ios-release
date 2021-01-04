@@ -22,9 +22,16 @@
 -(NSDictionary *)getMemberDictionary;
 -(NSArray *)getMembers;
 
+-(NSArray *)getBannedUsers;
+-(NSArray *)getMutedUsers;
+
 -(TPMessage *)getLastMessage;
 -(int)getUnreadCount;
 -(NSString *)getInvitationCode;
+
+-(BOOL)isFrozen;
+-(NSString *)getImageUrl;
+-(NSDictionary *)getData;
 
 -(int)getMessageUnreadCount:(TPMessage *)tpMessage;
 
