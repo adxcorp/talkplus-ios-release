@@ -10,6 +10,7 @@
 
 #define TP_MESSAGE_TYPE_TEXT        @"text"
 #define TP_MESSAGE_TYPE_CUSTOM      @"custom"
+#define TP_MESSAGE_TYPE_ADMIN       @"admin"
 
 @interface TPMessage : TPEntity
 

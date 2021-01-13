@@ -18,15 +18,11 @@
 -(id)initWithDictionary:(NSDictionary *)dict;
 
 -(NSString *)getChannelId;
-
--(NSDictionary *)getMemberDictionary;
--(NSArray *)getMembers;
-
--(NSArray *)getBannedUsers;
--(NSArray *)getMutedUsers;
+-(NSString *)getChannelName;
 
 -(TPMessage *)getLastMessage;
 -(int)getUnreadCount;
+-(int)getMaxCount;
 -(NSString *)getInvitationCode;
 
 -(BOOL)isFrozen;

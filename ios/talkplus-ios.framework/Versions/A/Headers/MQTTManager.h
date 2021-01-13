@@ -12,7 +12,9 @@
 
 + (MQTTManager *)sharedInstance;
 
+-(void)setAppId:(NSString *)appId;
 -(void)setIotEndpoint:(NSString *)iotEndpoint;
+-(void)setIdentityPoolId:(NSString *)identityPoolId;
 -(void)setSessionId:(NSString *)sessionId;
 -(void)connect:(AWSIoTMQTTNewMessageBlock)callback;
 -(void)disconnect;
