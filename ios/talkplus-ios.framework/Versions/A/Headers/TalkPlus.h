@@ -52,10 +52,6 @@
 -(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxCount:(int)maxCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)updateChannel:(TPChannel *)tpChannel maxCount:(int)maxCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
--(void)getChannelMembers:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray * tpUserArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)getChannelBannedMembers:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray * tpUserArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)getChannelMutedMembers:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray * tpUserArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
-
 -(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray * tpMessageArray))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 

@@ -18,5 +18,6 @@
 -(void)postJsonRequest:(NSURL *) requestUrl data:(NSData *)jsonData success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)putJsonRequest:(NSURL *) requestUrl data:(NSData *)jsonData success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getRequest:(NSURL *) requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getGZipRequest:(NSURL *)requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)deleteRequest:(NSURL *) requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 @end

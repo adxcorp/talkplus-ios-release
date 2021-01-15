@@ -16,9 +16,9 @@
 
 -(NSString *)getMessageId;
 -(NSString *)getChannelId;
--(NSString *)getSenderId;
--(NSString *)getSenderName;
--(NSString *)getSenderProfileImage;
+-(NSString *)getUserId;
+-(NSString *)getUsername;
+-(NSString *)getUserProfileImage;
 -(NSString *)getText;
 -(NSString *)getType;
 -(NSDictionary *)getData;

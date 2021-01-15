@@ -21,8 +21,17 @@
 -(NSString *)getChannelName;
 
 -(TPMessage *)getLastMessage;
+
 -(int)getUnreadCount;
--(int)getMaxCount;
+-(int)getMemberMaxCount;
+-(int)getMemberCount;
+
+
+-(NSDictionary *)getMemberDictionary;
+-(NSArray *)getMembers;
+-(NSArray *)getBannedUsers;
+-(NSArray *)getMutedUsers;
+
 -(NSString *)getInvitationCode;
 
 -(BOOL)isFrozen;
