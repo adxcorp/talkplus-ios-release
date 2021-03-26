@@ -20,4 +20,5 @@
 -(void)getRequest:(NSURL *) requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getGZipRequest:(NSURL *)requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)deleteRequest:(NSURL *) requestUrl success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)multipartRequest:(NSURL *)requestUrl param:(NSDictionary *)param filePath:(NSString *)filePath success:(void (^)(NSDictionary * dict))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 @end

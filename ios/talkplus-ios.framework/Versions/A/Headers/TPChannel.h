@@ -20,12 +20,14 @@
 -(NSString *)getChannelId;
 -(NSString *)getChannelName;
 
+-(NSString *)getChannelOwnerId;
+-(NSString *)getType;
+
 -(TPMessage *)getLastMessage;
 
 -(int)getUnreadCount;
 -(int)getMemberMaxCount;
 -(int)getMemberCount;
-
 
 -(NSDictionary *)getMemberDictionary;
 -(NSArray *)getMembers;

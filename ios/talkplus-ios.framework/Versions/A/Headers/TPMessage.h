@@ -10,6 +10,7 @@
 
 #define TP_MESSAGE_TYPE_TEXT        @"text"
 #define TP_MESSAGE_TYPE_CUSTOM      @"custom"
+#define TP_MESSAGE_TYPE_HIDDEN      @"hidden"
 #define TP_MESSAGE_TYPE_ADMIN       @"admin"
 
 @interface TPMessage : TPEntity
@@ -20,6 +21,7 @@
 -(NSString *)getUsername;
 -(NSString *)getUserProfileImage;
 -(NSString *)getText;
+-(NSString *)getFileUrl;
 -(NSString *)getType;
 -(NSDictionary *)getData;
 -(long)getCreatedAt;
