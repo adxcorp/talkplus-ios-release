@@ -6,18 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef void(^MQTTNewMessageBlock)(NSData *data);
+#import "AWSIoT.h"
 
 @interface MQTTManager : NSObject
 
 + (MQTTManager *)sharedInstance;
 
 -(void)setAppId:(NSString *)appId;
--(void)setMqttEndpoint:(NSString *)mqttEndpoint;
+-(void)setIotEndpoint:(NSString *)iotEndpoint;
+-(void)setIdentityPoolId:(NSString *)identityPoolId;
 -(void)setSessionId:(NSString *)sessionId;
--(void)setPassword:(NSString *)password;
--(void)connect:(MQTTNewMessageBlock)callback;
+-(void)connect:(AWSIoTMQTTNewMessageBlock)callback;
 -(void)disconnect;
 
 @end

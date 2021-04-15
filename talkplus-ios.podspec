@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-ios"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.summary = "A short description of talkplus-ios."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"Chiung Choi"=>"god@adxcorp.kr"}
@@ -11,8 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'ios/talkplus-ios.framework'
 
-  s.dependency 'MQTTClient/Core', '0.15.3'
-  s.dependency 'MQTTClient/Websocket', '0.15.3'
+  s.dependency 'AWSIoT', '2.16.0'
   s.dependency 'GZIP', '1.3.0'
   
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
