@@ -16,6 +16,8 @@
 -(NSString *)getUsername;
 -(NSString *)getProfileImageUrl;
 
+-(BOOL)isDisablePushNotification;
+
 -(long)getCreatedAt;
 -(long)getUpdatedAt;
 -(long)getLastReadAt;

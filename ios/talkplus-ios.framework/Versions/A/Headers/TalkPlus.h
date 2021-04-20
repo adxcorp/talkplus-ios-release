@@ -42,6 +42,10 @@
 -(void)updateUserProfile:(NSString *)username profileImageUrl:(NSString *)profileImageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)updateUserProfile:(NSString *)username profileImage:(UIImage *)profileImage metaData:(NSDictionary *)metaData success:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+#pragma mark - Push Notification Enable/Disable
+-(void)enablePushNotification:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)disablePushNotification:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 #pragma mark - User Block / Unblock
 -(void)blockUser:(NSString *)targetId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)unblockUser:(NSString *)targetId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
