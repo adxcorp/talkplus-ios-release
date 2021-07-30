@@ -103,6 +103,9 @@
 -(void)freezeChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)unfreezeChannel:(NSString *)channelId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+#pragma mark - Channel Transfer Ownership
+-(void)transferOwnership:(TPChannel *)tpChannel targetUserId:(NSString *)targetUserId success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 #pragma mark - TPChannelDelegate
 -(void)addChannelDelegate:(id<TPChannelDelegate>)delegate tag:(NSString *)tag;
 -(void)removeChannelDelegate:(NSString *)tag;
