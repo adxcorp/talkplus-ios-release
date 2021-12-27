@@ -65,6 +65,9 @@
 -(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)updateChannel:(TPChannel *)tpChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+#pragma mark - Channel
+-(void)getChannel:(NSString *)channelId success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 #pragma mark - Channel List
 -(void)getPublicChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
