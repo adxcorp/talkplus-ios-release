@@ -36,6 +36,7 @@
 -(void)initWithAppId:(NSString *)appId;
 
 -(TPUser *)getCurrentUser;
+-(NSString *)getDeviceUuid;
 
 #pragma mark - User Auth
 -(void)loginWithAnonymous:(NSString *)userId username:(NSString *)username profileImageUrl:(NSString *)profileImageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -71,6 +72,7 @@
 #pragma mark - Channel List
 -(void)getPublicChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)searchChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getHiddenChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getTotalUnreadCount:(void (^)(int totalCount))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
@@ -97,6 +99,7 @@
 
 #pragma mark - Channel Message
 -(void)getMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getFileMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData success:(void (^)(TPMessage *tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)sendFileMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData filePath:(NSString *)filePath  success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)markAsReadChannel:(TPChannel *)tpChannel success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;

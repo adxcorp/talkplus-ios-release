@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-ios"
-  s.version = "0.2.5"
+  s.version = "0.2.8"
   s.summary = "A short description of talkplus-ios."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"Chiung Choi"=>"god@adxcorp.kr"}
