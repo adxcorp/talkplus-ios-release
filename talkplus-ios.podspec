@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-ios"
-  s.version = "0.2.8"
+  s.version = "0.2.9"
   s.summary = "A short description of talkplus-ios."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"Chiung Choi"=>"god@adxcorp.kr"}
@@ -8,12 +8,10 @@ Pod::Spec.new do |s|
   s.description = "TODO: Add long description of the pod here."
   s.source = { :git => 'https://github.com/adxcorp/talkplus-ios-release.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target    = '9.0'
-  s.ios.vendored_framework   = 'ios/talkplus-ios.framework'
+  s.ios.deployment_target = '9.0'
+  s.ios.vendored_framework = 'ios/TalkPlus.xcframework'
 
-  s.dependency 'GZIP', '1.3.0'
-  
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
+
 end
