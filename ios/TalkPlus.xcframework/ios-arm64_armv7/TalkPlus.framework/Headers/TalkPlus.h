@@ -8,9 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "TPUser.h"
-#import "TPChannel.h"
-#import "TPMessage.h"
+#import <TalkPlus/TPEntity.h>
+#import <TalkPlus/TPUser.h>
+#import <TalkPlus/TPChannel.h>
+#import <TalkPlus/TPMessage.h>
 
 @protocol TPChannelDelegate <NSObject>
 @required
