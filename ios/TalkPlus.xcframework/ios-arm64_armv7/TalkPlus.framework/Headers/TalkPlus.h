@@ -13,7 +13,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.2.10"
+#define TALKPLUS_SDK_VERSION @"0.2.11"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -54,6 +54,8 @@
 #pragma mark - Push Notification Enable/Disable
 -(void)enablePushNotification:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)disablePushNotification:(void (^)(TPUser *tpUser))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)enableChannelPushNotification:(TPChannel *)tpChannel success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)disableChannelPushNotification:(TPChannel *)tpChannel success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 #pragma mark - User Block / Unblock
 -(void)blockUser:(NSString *)targetId success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -128,5 +130,9 @@
 #pragma mark - Push Notification
 -(void)registerFCMToken:(NSString *)fcmToken success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)handleFCMMessage:(NSString *)payload;
+
+#pragma mark - Push Notification Settings (sound, etc.)
+-(void)setChannelPush:(TPChannel *)tpChannel sound:(NSString *) sound success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getChannelPushSound:(TPChannel *)tpChannel success:(void (^)(NSString *))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 @end
