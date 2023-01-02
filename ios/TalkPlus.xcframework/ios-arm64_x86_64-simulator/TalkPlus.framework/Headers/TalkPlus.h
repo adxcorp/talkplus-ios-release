@@ -13,7 +13,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.2.11"
+#define TALKPLUS_SDK_VERSION @"0.3.0"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -67,9 +67,11 @@
 -(void)deleteUser:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 #pragma mark - Channel Create / Update
--(void)createChannelWithUserId:(NSString *)targetId channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)updateChannel:(TPChannel *)tpChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)createChannelWithUserId:(NSString *)targetId channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode category:(NSString *)category subcategory:(NSString *)subcategory imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)createChannelWithUserIds:(NSArray *)targetIds channelId:(NSString *)channelId reuseChannel:(BOOL)reuseChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelType:(NSString *)channelType channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode category:(NSString *)category subcategory:(NSString *)subcategory imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)updateChannel:(TPChannel *)tpChannel maxMemberCount:(int)maxMemberCount hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin channelName:(NSString *)channelName invitationCode:(NSString *)invitationCode category:(NSString *)category subcategory:(NSString *)subcategory imageUrl:(NSString *)imageUrl metaData:(NSDictionary *)metaData success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)updateChannel:(TPChannel *)tpChannel privateTag:(NSString *)privateTag success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)updateChannel:(TPChannel *)tpChannel privateData:(NSDictionary *)metaData success:(void (^)(TPChannel * tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 #pragma mark - Channel
 -(void)getChannel:(NSString *)channelId success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -77,7 +79,9 @@
 #pragma mark - Channel List
 -(void)getPublicChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)searchChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getChannelMemberList:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray<TPUser *> *tpUsers))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)searchChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds category:(NSString *)category subcategory:(NSString *)subcategory success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)searchPublicChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds category:(NSString *)category subcategory:(NSString *)subcategory success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getHiddenChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getTotalUnreadCount:(void (^)(int totalCount))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
@@ -105,6 +109,7 @@
 #pragma mark - Channel Message
 -(void)getMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getFileMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)deleteMessage:(TPChannel *)tpChannel message:(TPMessage *)tpMessage success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData success:(void (^)(TPMessage *tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)sendFileMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData filePath:(NSString *)filePath  success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)markAsReadChannel:(TPChannel *)tpChannel success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -133,6 +138,5 @@
 
 #pragma mark - Push Notification Settings (sound, etc.)
 -(void)setChannelPush:(TPChannel *)tpChannel sound:(NSString *) sound success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)getChannelPushSound:(TPChannel *)tpChannel success:(void (^)(NSString *))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 @end

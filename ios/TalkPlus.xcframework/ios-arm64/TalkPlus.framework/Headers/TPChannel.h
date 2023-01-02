@@ -36,9 +36,18 @@
 
 -(NSString *)getInvitationCode;
 
+-(NSString *)getCategory;
+-(NSString *)getSubCategory;
+
 -(BOOL)isFrozen;
 -(NSString *)getImageUrl;
 -(NSDictionary *)getData;
+-(NSDictionary *)getPrivateData;
+
+-(NSString *)getPrivateTag;
+
+-(BOOL)isPushNotificationDisabled;
+-(NSString *)getPushNotificationSound;
 
 -(int)getMessageUnreadCount:(TPMessage *)tpMessage;
 
