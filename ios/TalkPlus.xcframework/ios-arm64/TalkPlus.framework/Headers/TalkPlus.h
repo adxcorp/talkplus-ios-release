@@ -13,7 +13,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.3.7"
+#define TALKPLUS_SDK_VERSION @"0.3.8"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -21,7 +21,7 @@
 -(void)memberAdded:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
 -(void)memberLeft:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
 -(void)messageReceived:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
--(void)messageRemoved:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
+-(void)messageDeleted:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
 -(void)channelAdded:(TPChannel *)tpChannel;
 -(void)channelChanged:(TPChannel *)tpChannel;
 -(void)channelRemoved:(TPChannel *)tpChannel;
