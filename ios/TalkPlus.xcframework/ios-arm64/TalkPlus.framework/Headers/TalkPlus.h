@@ -10,23 +10,24 @@
 
 #import <TalkPlus/TPEntity.h>
 #import <TalkPlus/TPUser.h>
+#import <TalkPlus/TPMember.h>
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.3.8"
+#define TALKPLUS_SDK_VERSION @"0.3.9"
 
 @protocol TPChannelDelegate <NSObject>
 @required
 
--(void)memberAdded:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
--(void)memberLeft:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
+-(void)memberAdded:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)memberLeft:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)messageReceived:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
 -(void)messageDeleted:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
 -(void)channelAdded:(TPChannel *)tpChannel;
 -(void)channelChanged:(TPChannel *)tpChannel;
 -(void)channelRemoved:(TPChannel *)tpChannel;
--(void)publicMemberAdded:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
--(void)publicMemberLeft:(TPChannel *)tpChannel users:(NSArray<TPUser *> *)users;
+-(void)publicMemberAdded:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)publicMemberLeft:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)publicChannelAdded:(TPChannel *)tpChannel;
 -(void)publicChannelChanged:(TPChannel *)tpChannel;
 -(void)publicChannelRemoved:(TPChannel *)tpChannel;
@@ -80,7 +81,9 @@
 #pragma mark - Channel List
 -(void)getPublicChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)getChannelMemberList:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray<TPUser *> *tpUsers))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getChannelMember:(TPChannel *)tpChannel memberId:(NSString *)memberId success:(void (^)(TPMember *tpMember))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)getChannelMemberList:(TPChannel *)tpChannel lastUser:(TPUser *)lastUser success:(void (^)(NSArray<TPMember *> *tpMembers))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)updateChannel:(TPChannel *)tpChannel memberInfo:(NSDictionary *)memberInfo success:(void (^)(TPMember * tpMember))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)searchChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds category:(NSString *)category subcategory:(NSString *)subcategory success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)searchPublicChannelList:(TPChannel *)lastChannel channelName:(NSString *)channelName memberIds:(NSArray *)memberIds category:(NSString *)category subcategory:(NSString *)subcategory success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getHiddenChannelList:(TPChannel *)lastChannel success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;

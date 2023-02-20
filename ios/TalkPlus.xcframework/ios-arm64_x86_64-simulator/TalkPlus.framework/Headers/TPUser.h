@@ -22,4 +22,6 @@
 -(long)getUpdatedAt;
 -(long)getLastReadAt;
 
+-(NSDictionary *)getData;
+
 @end
