@@ -24,6 +24,10 @@
 -(NSString *)getText;
 -(NSString *)getFileUrl;
 -(NSString *)getType;
+-(NSString *)getParentMessageId;
+-(TPMessage *)getParentMessage;
+-(NSArray *)getMentions;
+-(NSDictionary *)getReactions;
 -(NSDictionary *)getData;
 -(long)getCreatedAt;
 

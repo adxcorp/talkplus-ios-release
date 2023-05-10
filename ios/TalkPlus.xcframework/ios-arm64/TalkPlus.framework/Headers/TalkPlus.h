@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.3.9"
+#define TALKPLUS_SDK_VERSION @"0.4.0"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -114,8 +114,10 @@
 -(void)getMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)getFileMessageList:(TPChannel *)tpChannel lastMessage:(TPMessage *)lastMessage success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)deleteMessage:(TPChannel *)tpChannel message:(TPMessage *)tpMessage success:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData success:(void (^)(TPMessage *tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
--(void)sendFileMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type metaData:(NSDictionary *)metaData filePath:(NSString *)filePath  success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)sendMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type mentions:(NSArray *)mentions parentMessageId:(NSString *)parentMessageId metaData:(NSDictionary *)metaData success:(void (^)(TPMessage *tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)sendFileMessage:(TPChannel *)tpChannel text:(NSString *)text type:(NSString *)type mentions:(NSArray *)mentions parentMessageId:(NSString *)parentMessageId metaData:(NSDictionary *)metaData filePath:(NSString *)filePath  success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)addMessageReaction:(TPMessage *)tpMessage reaction:(NSString *)reaction success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)removeMessageReaction:(TPMessage *)tpMessage reaction:(NSString *)reaction success:(void (^)(TPMessage * tpMessage))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)markAsReadChannel:(TPChannel *)tpChannel success:(void (^)(TPChannel *tpChannel))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 -(void)markAsReadAllChannel:(void (^)(void))successBlock failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
