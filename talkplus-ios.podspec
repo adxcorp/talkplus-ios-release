@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = "talkplus-ios"
   s.version = "0.4.3"
   s.summary = "A short description of talkplus-ios."
-  s.license = {"type"=>"MIT", "file"=>"LICENSE"}
+  s.license = {"type"=>"MIT"}
   s.authors = {"Chiung Choi"=>"god@adxcorp.kr"}
   s.homepage = "https://www.talkplus.io/"
   s.description = "TODO: Add long description of the pod here."
