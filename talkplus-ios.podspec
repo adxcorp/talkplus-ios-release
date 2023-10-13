@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-ios"
-  s.version = "0.4.3"
+  s.version = "0.4.4"
   s.summary = "A short description of talkplus-ios."
   s.license = {"type"=>"MIT"}
   s.authors = {"Chiung Choi"=>"god@adxcorp.kr"}
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description = "TODO: Add long description of the pod here."
   s.source = { :git => 'https://github.com/adxcorp/talkplus-ios-release.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.ios.vendored_framework = 'ios/TalkPlus.xcframework'
 
 end
