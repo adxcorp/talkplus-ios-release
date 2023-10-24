@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.4.3"
+#define TALKPLUS_SDK_VERSION @"0.4.5"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -187,11 +187,21 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
 #pragma mark - Channel List
 -(void)getPublicChannelList:(TPChannel *)lastChannel
                     success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getPublicChannels:success:failure:")));
+
+-(void)getPublicChannels:(TPChannel *)lastChannel
+                 success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getChannelList:(TPChannel *)lastChannel
               success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-              failure:(void (^)(int errorCode, NSError *error))failureBlock;
+              failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getChannels:success:failure:")));
+
+-(void)getChannels:(TPChannel *)lastChannel
+           success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getChannelMember:(TPChannel *)tpChannel
                memberId:(NSString *)memberId
@@ -201,7 +211,13 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
 -(void)getChannelMemberList:(TPChannel *)tpChannel
                    lastUser:(TPUser *)lastUser
                     success:(void (^)(NSArray<TPMember *> *tpMembers))successBlock
-                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getChannelMembers:lastUser:success:failure:")));
+
+-(void)getChannelMembers:(TPChannel *)tpChannel
+                lastUser:(TPMember *)lastUser
+                 success:(void (^)(NSArray<TPMember *> *tpMembers, BOOL hasNext))successBlock
+                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)updateChannel:(TPChannel *)tpChannel
           memberInfo:(NSDictionary *)memberInfo
@@ -214,7 +230,8 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
                 category:(NSString *)category
              subcategory:(NSString *)subcategory
                  success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                 failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
 
 -(void)searchChannelList:(TPChannel *)lastChannel
              channelName:(NSString *)channelName
@@ -223,7 +240,17 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
              subcategory:(NSString *)subcategory
               privateTag:(NSString *)privateTag
                  success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                 failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+
+-(void)searchChannels:(TPChannel *)lastChannel
+          channelName:(NSString *)channelName
+            memberIds:(NSArray *)memberIds
+             category:(NSString *)category
+          subcategory:(NSString *)subcategory
+           privateTag:(NSString *)privateTag
+              success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+              failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)searchPublicChannelList:(TPChannel *)lastChannel
                    channelName:(NSString *)channelName
@@ -231,7 +258,8 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
                       category:(NSString *)category
                    subcategory:(NSString *)subcategory
                        success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                       failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                       failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchPublicChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
 
 -(void)searchPublicChannelList:(TPChannel *)lastChannel
                    channelName:(NSString *)channelName
@@ -240,15 +268,30 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
                    subcategory:(NSString *)subcategory
                     privateTag:(NSString *)privateTag
                        success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                       failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                       failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchPublicChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+
+-(void)searchPublicChannels:(TPChannel *)lastChannel
+                channelName:(NSString *)channelName
+                  memberIds:(NSArray *)memberIds
+                   category:(NSString *)category
+                subcategory:(NSString *)subcategory
+                 privateTag:(NSString *)privateTag
+                    success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getFilteredChannelList:(NSDictionary<NSString *, NSString *> *)filter
-                      success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
+                      success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
                       failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getHiddenChannelList:(TPChannel *)lastChannel
                     success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
-                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getHiddenChannels:success:failure:")));
+
+-(void)getHiddenChannels:(TPChannel *)lastChannel
+                 success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getTotalUnreadCount:(void (^)(int totalCount))successBlock
                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
@@ -328,7 +371,7 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
 
 -(void)getMutedPeers:(TPChannel *)tpChannel
             lastUser:(TPMember *)lastUser
-             success:(void (^)(NSArray<TPMember *> *mutedPeers))successBlock
+             success:(void (^)(NSArray<TPMember *> *tpMembers, BOOL hasNext))successBlock
              failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)mutePeerToChannel:(TPChannel *)tpChannel
@@ -361,12 +404,24 @@ deleteChannelIfEmpty:(BOOL)deleteChannelIfEmpty
 -(void)getMessageList:(TPChannel *)tpChannel
           lastMessage:(TPMessage *)lastMessage
               success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock
-              failure:(void (^)(int errorCode, NSError *error))failureBlock;
+              failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getMessages:lastMessage:success:failure:")));
 
 -(void)getFileMessageList:(TPChannel *)tpChannel
               lastMessage:(TPMessage *)lastMessage
                   success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock
-                  failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                  failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use getFileMessages:lastMessage:success:failure:")));
+
+-(void)getMessages:(TPChannel *)tpChannel
+       lastMessage:(TPMessage *)lastMessage
+           success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)getFileMessages:(TPChannel *)tpChannel
+           lastMessage:(TPMessage *)lastMessage
+               success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
+               failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)deleteMessage:(TPChannel *)tpChannel
              message:(TPMessage *)tpMessage
@@ -379,6 +434,16 @@ deleteChannelIfEmpty:(BOOL)deleteChannelIfEmpty
           mentions:(NSArray *)mentions
    parentMessageId:(NSString *)parentMessageId
           metaData:(NSDictionary *)metaData
+           success:(void (^)(TPMessage *tpMessage))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)sendMessage:(TPChannel *)tpChannel
+              text:(NSString *)text
+              type:(NSString *)type
+          mentions:(NSArray *)mentions
+   parentMessageId:(NSString *)parentMessageId
+          metaData:(NSDictionary *)metaData
+           fileUrl:(NSString *)fileUrl
            success:(void (^)(TPMessage *tpMessage))successBlock
            failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
