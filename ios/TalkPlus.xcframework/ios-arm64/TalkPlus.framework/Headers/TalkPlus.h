@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.4.5"
+#define TALKPLUS_SDK_VERSION @"0.4.6"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -401,6 +401,11 @@ deleteChannelIfEmpty:(BOOL)deleteChannelIfEmpty
             failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 #pragma mark - Channel Message
+-(void)getMessage:(TPChannel *)tpChannel
+        messageId:(NSString *)tpMessageId
+          success:(void (^)(TPMessage *tpMessage))successBlock
+          failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)getMessageList:(TPChannel *)tpChannel
           lastMessage:(TPMessage *)lastMessage
               success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock
