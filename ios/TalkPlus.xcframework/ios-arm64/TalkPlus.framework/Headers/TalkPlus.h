@@ -119,6 +119,10 @@
                   success:(void (^)(NSArray<TPUser *> *tpUsers))successBlock
                   failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)getBlockedUsers:(TPUser *)lastUser
+               success:(void (^)(NSArray<TPUser *> *tpUsers, BOOL hasNext))successBlock
+               failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 #pragma mark - User Delete / Logout
 -(void)logout:(void (^)(void))successBlock
       failure:(void (^)(int errorCode, NSError *error))failureBlock;
