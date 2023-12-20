@@ -29,6 +29,7 @@
 -(NSArray *)getMentions;
 -(NSDictionary *)getReactions;
 -(NSDictionary *)getData;
+-(NSDictionary *)getTranslatedText;
 -(long)getCreatedAt;
 
 @end

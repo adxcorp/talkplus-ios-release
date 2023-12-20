@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.4.6"
+#define TALKPLUS_SDK_VERSION @"0.4.8"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -440,7 +440,7 @@ __attribute__((deprecated("use getFileMessages:lastMessage:success:failure:")));
 -(void)sendMessage:(TPChannel *)tpChannel
               text:(NSString *)text
               type:(NSString *)type
-          mentions:(NSArray *)mentions
+          mentions:(NSArray<NSString *> *)mentions
    parentMessageId:(NSString *)parentMessageId
           metaData:(NSDictionary *)metaData
            success:(void (^)(TPMessage *tpMessage))successBlock
@@ -449,20 +449,52 @@ __attribute__((deprecated("use getFileMessages:lastMessage:success:failure:")));
 -(void)sendMessage:(TPChannel *)tpChannel
               text:(NSString *)text
               type:(NSString *)type
-          mentions:(NSArray *)mentions
+          mentions:(NSArray<NSString *> *)mentions
+   parentMessageId:(NSString *)parentMessageId
+          metaData:(NSDictionary *)metaData
+translationLanguages:(NSArray <NSString *>*)translationLanguages
+           success:(void (^)(TPMessage *tpMessage))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)sendMessage:(TPChannel *)tpChannel
+              text:(NSString *)text
+              type:(NSString *)type
+          mentions:(NSArray<NSString *> *)mentions
    parentMessageId:(NSString *)parentMessageId
           metaData:(NSDictionary *)metaData
            fileUrl:(NSString *)fileUrl
            success:(void (^)(TPMessage *tpMessage))successBlock
            failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)sendMessage:(TPChannel *)tpChannel
+              text:(NSString *)text
+              type:(NSString *)type
+          mentions:(NSArray<NSString *> *)mentions
+   parentMessageId:(NSString *)parentMessageId
+          metaData:(NSDictionary *)metaData
+           fileUrl:(NSString *)fileUrl
+translationLanguages:(NSArray <NSString *>*)translationLanguages
+           success:(void (^)(TPMessage *tpMessage))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)sendFileMessage:(TPChannel *)tpChannel
                   text:(NSString *)text
                   type:(NSString *)type
-              mentions:(NSArray *)mentions
+              mentions:(NSArray<NSString *> *)mentions
        parentMessageId:(NSString *)parentMessageId
               metaData:(NSDictionary *)metaData
               filePath:(NSString *)filePath
+               success:(void (^)(TPMessage * tpMessage))successBlock
+               failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)sendFileMessage:(TPChannel *)tpChannel
+                  text:(NSString *)text
+                  type:(NSString *)type
+              mentions:(NSArray<NSString *> *)mentions
+       parentMessageId:(NSString *)parentMessageId
+              metaData:(NSDictionary *)metaData
+              filePath:(NSString *)filePath
+  translationLanguages:(NSArray <NSString *>*)translationLanguages
                success:(void (^)(TPMessage * tpMessage))successBlock
                failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
