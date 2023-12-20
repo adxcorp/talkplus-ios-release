@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.4.9"
+#define TALKPLUS_SDK_VERSION @"0.5.0"
 
 @protocol TPChannelDelegate <NSObject>
 @required
