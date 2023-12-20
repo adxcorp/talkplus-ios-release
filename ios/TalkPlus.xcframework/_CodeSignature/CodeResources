@@ -26,19 +26,23 @@
 		</data>
 		<key>ios-arm64/TalkPlus.framework/Headers/TalkPlus.h</key>
 		<data>
-		t7hAp/yFAVXARpHbQYSI7CwcpFs=
+		O86R14LaYekjiPAbqTYVd2E8BT8=
 		</data>
 		<key>ios-arm64/TalkPlus.framework/Info.plist</key>
 		<data>
-		+y/ME5Mnr3vGingiam9Dknsewwc=
+		35A4298Bswy9C8jH5CZYM7gcOjQ=
 		</data>
 		<key>ios-arm64/TalkPlus.framework/Modules/module.modulemap</key>
 		<data>
 		AA4hFypfDYZUJtbCasPRP8LPNsU=
 		</data>
+		<key>ios-arm64/TalkPlus.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		CnwufzH69z2NBPO7FiJkqlxT8q4=
+		</data>
 		<key>ios-arm64/TalkPlus.framework/TalkPlus</key>
 		<data>
-		JrBRke3X1DND+zXmcaabslNmIY4=
+		Es91uwNxU7vPi+gVjACq0z1oU68=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Headers/TPChannel.h</key>
 		<data>
@@ -62,19 +66,43 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Headers/TalkPlus.h</key>
 		<data>
-		t7hAp/yFAVXARpHbQYSI7CwcpFs=
+		O86R14LaYekjiPAbqTYVd2E8BT8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Info.plist</key>
 		<data>
-		96JK3TfKTwibSpnEuhssEB37atQ=
+		dcJasTIdxDflTEiRM8g6MgwDvqc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Modules/module.modulemap</key>
 		<data>
 		AA4hFypfDYZUJtbCasPRP8LPNsU=
 		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		CnwufzH69z2NBPO7FiJkqlxT8q4=
+		</data>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/TalkPlus</key>
 		<data>
-		fMLr298B07e4wPPsPTO8yc2Grc0=
+		RIO/6R8SGQ3wIh6dc06F+O2qOOQ=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		q9Un1FaFgayddveTJrirkOv9L3M=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		zzlT5LpdadXrkoMAswGXc8j/6cg=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeResources</key>
+		<data>
+		7BuS2boc1pVXuyXEe51iq+5HLZY=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -138,22 +166,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t7hAp/yFAVXARpHbQYSI7CwcpFs=
+			O86R14LaYekjiPAbqTYVd2E8BT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			hPCpuUwO7t5j9RdhNuZtzAvuVDPdqwhR2ohKtL/BQbw=
+			/tzZGJVFnYo9wYp33/uojbASQlETHJuaukmttg7srZU=
 			</data>
 		</dict>
 		<key>ios-arm64/TalkPlus.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+y/ME5Mnr3vGingiam9Dknsewwc=
+			35A4298Bswy9C8jH5CZYM7gcOjQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NcSL/I0+vrRMEdgAjjz4A3a9Gf2fbC0XwMbbt5hdCDg=
+			ydyhYHj65WuG2dGJ3ud+xpyj1hqOLVghbBOOUbyw9So=
 			</data>
 		</dict>
 		<key>ios-arm64/TalkPlus.framework/Modules/module.modulemap</key>
@@ -167,15 +195,26 @@
 			77BTSlsBWlONSNVM5S3W4t+QkcmD980uUkygiDwBQKc=
 			</data>
 		</dict>
+		<key>ios-arm64/TalkPlus.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CnwufzH69z2NBPO7FiJkqlxT8q4=
+			</data>
+			<key>hash2</key>
+			<data>
+			3diM+pSLjXAGqe0SgImL1wDhkevJy9CMM6Ev9YLbc+I=
+			</data>
+		</dict>
 		<key>ios-arm64/TalkPlus.framework/TalkPlus</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JrBRke3X1DND+zXmcaabslNmIY4=
+			Es91uwNxU7vPi+gVjACq0z1oU68=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Hl5N0mpyRKpL6yRJJu0BYwgdZrkfaF0aB7pMze9Q30=
+			yA2DMDONg4cHJXxoZFHfZH3DeAzSG2a6gZHuzuDPflw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Headers/TPChannel.h</key>
@@ -237,22 +276,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t7hAp/yFAVXARpHbQYSI7CwcpFs=
+			O86R14LaYekjiPAbqTYVd2E8BT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			hPCpuUwO7t5j9RdhNuZtzAvuVDPdqwhR2ohKtL/BQbw=
+			/tzZGJVFnYo9wYp33/uojbASQlETHJuaukmttg7srZU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			96JK3TfKTwibSpnEuhssEB37atQ=
+			dcJasTIdxDflTEiRM8g6MgwDvqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6yZQb+/4B+9aCYjkjbvXVvItKAzZzab6NEspN8OOrkA=
+			p1r5ROAL1tbzm1eDuT0/qXaGg/0QBz/c8DRgE6cRynE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/Modules/module.modulemap</key>
@@ -266,15 +305,81 @@
 			77BTSlsBWlONSNVM5S3W4t+QkcmD980uUkygiDwBQKc=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CnwufzH69z2NBPO7FiJkqlxT8q4=
+			</data>
+			<key>hash2</key>
+			<data>
+			3diM+pSLjXAGqe0SgImL1wDhkevJy9CMM6Ev9YLbc+I=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/TalkPlus</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fMLr298B07e4wPPsPTO8yc2Grc0=
+			RIO/6R8SGQ3wIh6dc06F+O2qOOQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			J/l9q7d7ITpWg7eZ4GB+fInOgeyn52QGj2vE+kTEIIA=
+			/oaVMDUTcU2TCFF4YtY2kMOXArBq9a0bn9+DFSrWN3s=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q9Un1FaFgayddveTJrirkOv9L3M=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vwh+Zz7ZDclVOPSTC64SoEJOr9Lw3ob3Vc1w8k/asMU=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzlT5LpdadXrkoMAswGXc8j/6cg=
+			</data>
+			<key>hash2</key>
+			<data>
+			aS2daph0yAz+F2JPZ1m7qfEbRyVwYEL3kb8af1R338I=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7BuS2boc1pVXuyXEe51iq+5HLZY=
+			</data>
+			<key>hash2</key>
+			<data>
+			GYtcOR5aBAn0LJJ/EsKkbazUpD/2xnIt8xkhWHH4yaU=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TalkPlus.framework/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>
