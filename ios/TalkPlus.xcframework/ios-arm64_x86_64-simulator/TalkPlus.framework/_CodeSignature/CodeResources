@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/TPChannel.h</key>
 		<data>
-		m48C0E0wSuBoSMzdHhR39v5agEg=
+		k9wArbnvsj5FrgBcdwxpsUzu33U=
 		</data>
 		<key>Headers/TPEntity.h</key>
 		<data>
-		N1yKkf24+gs6JNdURVVXKS2W5m0=
+		4vBQOKYT4Y1SjuaPDE4DckWK/RA=
 		</data>
 		<key>Headers/TPMember.h</key>
 		<data>
-		xY3gOn1Ymt8u0p4/AwSGxd9mxao=
+		xMibQH3IaePxdGcXV9/obNbQ2yM=
 		</data>
 		<key>Headers/TPMessage.h</key>
 		<data>
-		+oAdhTrGcufHInzKlN+u7xjrOuU=
+		ChMsbg0MWILbj/H9q7XO35Z+oP0=
 		</data>
 		<key>Headers/TPUser.h</key>
 		<data>
-		WSkidYJ1kQizoWUohWNSscLYCGA=
+		NPb60NOnPrWdXioccjb1Koq9XfU=
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		78C32B2HB41KfhIbQUDwj9JrjhA=
+		J/L7Us5LaJOqR6UBS95O4ZEGPRo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dcJasTIdxDflTEiRM8g6MgwDvqc=
+		m4rVZOS/ouhhljwvrc8bkvNaugw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		CnwufzH69z2NBPO7FiJkqlxT8q4=
+		Gnh6D2NxUGCTJCOsCvpZXTG5XiM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -47,66 +47,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m48C0E0wSuBoSMzdHhR39v5agEg=
+			k9wArbnvsj5FrgBcdwxpsUzu33U=
 			</data>
 			<key>hash2</key>
 			<data>
-			KkktL2+qi0RhzmBoZqcRBaT5LMK5xHs0lZ/Rbr+tiw8=
+			MvSRLkn/FP0dZezTmbBtdiT4seOKQb5rYBhI4M9iwB8=
 			</data>
 		</dict>
 		<key>Headers/TPEntity.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N1yKkf24+gs6JNdURVVXKS2W5m0=
+			4vBQOKYT4Y1SjuaPDE4DckWK/RA=
 			</data>
 			<key>hash2</key>
 			<data>
-			LujYXgswCYMHd+QQEGeG+HKbSD6pqk3BgteVlJfJjxw=
+			xwf9CLWHGkvkT4dnLwCQVvJywfQm3JpcGKXyPk8Zm4g=
 			</data>
 		</dict>
 		<key>Headers/TPMember.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xY3gOn1Ymt8u0p4/AwSGxd9mxao=
+			xMibQH3IaePxdGcXV9/obNbQ2yM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hnJWh3NTz/DJYKlOP/t1Y45Uu1xeqInBEEHq4f956IQ=
+			nrYTCEVdilQ/xqHDEn8MKy/x5Ywz8XCrI92ORrdAVis=
 			</data>
 		</dict>
 		<key>Headers/TPMessage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+oAdhTrGcufHInzKlN+u7xjrOuU=
+			ChMsbg0MWILbj/H9q7XO35Z+oP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			CBU56tuOelt8kpSzLuHisQu5sJnzSgPpKnXfpAov9LI=
+			nOWdOLerlBPjOszSuCYiYIjpItH5SrySLvOSgEm8kyQ=
 			</data>
 		</dict>
 		<key>Headers/TPUser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WSkidYJ1kQizoWUohWNSscLYCGA=
+			NPb60NOnPrWdXioccjb1Koq9XfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			G9Yf9zAgAGc4za56dBtYOpJCEOYjjVex8FLi4Gz8p2M=
+			lMQXa4a01aGSccF9U/MXyOwRukHmkDghh5w6YALtDyA=
 			</data>
 		</dict>
 		<key>Headers/TalkPlus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			78C32B2HB41KfhIbQUDwj9JrjhA=
+			J/L7Us5LaJOqR6UBS95O4ZEGPRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sh3PLTUIg6GQ4X/U76INq7IW/DMc9+RBhbDAwWiIND0=
+			clJThXhXmyrefiv8JilffBx7cjJnwwCHTGFBLTpcOxM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -124,11 +124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CnwufzH69z2NBPO7FiJkqlxT8q4=
+			Gnh6D2NxUGCTJCOsCvpZXTG5XiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3diM+pSLjXAGqe0SgImL1wDhkevJy9CMM6Ev9YLbc+I=
+			4G8Za6GTvGTtqdu0TSVyQkqMkh22DfDLtfbB8hLwPfc=
 			</data>
 		</dict>
 	</dict>

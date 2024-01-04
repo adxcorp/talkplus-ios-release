@@ -14,7 +14,7 @@
 #import <TalkPlus/TPChannel.h>
 #import <TalkPlus/TPMessage.h>
 
-#define TALKPLUS_SDK_VERSION @"0.5.0"
+#define TALKPLUS_SDK_VERSION @"0.5.1"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -57,10 +57,26 @@
 
 -(void)loginWithAnonymous:(NSString *)userId
                  username:(NSString *)username
+          profileImageUrl:(NSString *)profileImageUrl
+                 metaData:(NSDictionary *)metaData
+      translationLanguage:(NSString *)translationLanguage
+                  success:(void (^)(TPUser *tpUser))successBlock
+                  failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)loginWithAnonymous:(NSString *)userId
+                 username:(NSString *)username
              profileImage:(UIImage *)profileImage
                  metaData:(NSDictionary *)metaData
                   success:(void (^)(TPUser *tpUser))successBlock
                   failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)loginWithAnonymous:(NSString *)userId
+                 username:(NSString *)username
+             profileImage:(UIImage *)profileImage
+                 metaData:(NSDictionary *)metaData
+      translationLanguage:(NSString *)translationLanguage
+                  success:(void (^)(TPUser *))successBlock
+                  failure:(void (^)(int, NSError *))failureBlock;
 
 -(void)loginWithToken:(NSString *)loginToken
                userId:(NSString *)userId
@@ -73,8 +89,26 @@
 -(void)loginWithToken:(NSString *)loginToken
                userId:(NSString *)userId
              username:(NSString *)username
+      profileImageUrl:(NSString *)profileImageUrl
+             metaData:(NSDictionary *)metaData
+  translationLanguage:(NSString *)translationLanguage
+              success:(void (^)(TPUser *tpUser))successBlock
+              failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)loginWithToken:(NSString *)loginToken
+               userId:(NSString *)userId
+             username:(NSString *)username
          profileImage:(UIImage *)profileImage
              metaData:(NSDictionary *)metaData
+              success:(void (^)(TPUser *tpUser))successBlock
+              failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)loginWithToken:(NSString *)loginToken
+               userId:(NSString *)userId
+             username:(NSString *)username
+         profileImage:(UIImage *)profileImage
+             metaData:(NSDictionary *)metaData
+  translationLanguage:(NSString *)translationLanguage
               success:(void (^)(TPUser *tpUser))successBlock
               failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
@@ -410,6 +444,12 @@ deleteChannelIfEmpty:(BOOL)deleteChannelIfEmpty
           success:(void (^)(TPMessage *tpMessage))successBlock
           failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)getMessage:(TPChannel *)tpChannel
+        messageId:(NSString *)tpMessageId
+translationLanguage:(NSString *)translationLanguage
+          success:(void (^)(TPMessage *tpMessage))successBlock
+          failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)getMessageList:(TPChannel *)tpChannel
           lastMessage:(TPMessage *)lastMessage
               success:(void (^)(NSArray<TPMessage *> *tpMessages))successBlock
@@ -427,8 +467,20 @@ __attribute__((deprecated("use getFileMessages:lastMessage:success:failure:")));
            success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
            failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)getMessages:(TPChannel *)tpChannel
+       lastMessage:(TPMessage *)lastMessage
+translationLanguage:(NSString *)translationLanguage
+           success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)getFileMessages:(TPChannel *)tpChannel
            lastMessage:(TPMessage *)lastMessage
+               success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
+               failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)getFileMessages:(TPChannel *)tpChannel
+           lastMessage:(TPMessage *)lastMessage
+   translationLanguage:(NSString *)translationLanguage
                success:(void (^)(NSArray<TPMessage *> *tpMessages, BOOL hasNext))successBlock
                failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
