@@ -28,6 +28,7 @@
 -(int)getUnreadCount;
 -(int)getMemberMaxCount;
 -(int)getMemberCount;
+-(long)getLastReadAt;
 
 -(NSDictionary *)getMemberDictionary;
 -(NSArray *)getMembers;

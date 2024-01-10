@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/TPChannel.h</key>
 		<data>
-		k9wArbnvsj5FrgBcdwxpsUzu33U=
+		/V1EmVQzxwns5l3wzII+L99KlKw=
 		</data>
 		<key>Headers/TPEntity.h</key>
 		<data>
 		4vBQOKYT4Y1SjuaPDE4DckWK/RA=
+		</data>
+		<key>Headers/TPLoginParams.h</key>
+		<data>
+		wiNy9XSqlN7utwic3JXMewvQsIg=
 		</data>
 		<key>Headers/TPMember.h</key>
 		<data>
@@ -20,13 +24,21 @@
 		<data>
 		ChMsbg0MWILbj/H9q7XO35Z+oP0=
 		</data>
+		<key>Headers/TPMessageRetrievalParams.h</key>
+		<data>
+		Df+ECnCLDnjvxGnXPFaTcOjYgs0=
+		</data>
+		<key>Headers/TPMessageSendParams.h</key>
+		<data>
+		CYHh/DxHbEhSWlrG0otxn3Dlsw4=
+		</data>
 		<key>Headers/TPUser.h</key>
 		<data>
 		NPb60NOnPrWdXioccjb1Koq9XfU=
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		J/L7Us5LaJOqR6UBS95O4ZEGPRo=
+		KS9D2BVDzZXlL0PbAj02CdT7J+k=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -47,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k9wArbnvsj5FrgBcdwxpsUzu33U=
+			/V1EmVQzxwns5l3wzII+L99KlKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvSRLkn/FP0dZezTmbBtdiT4seOKQb5rYBhI4M9iwB8=
+			h3v0snz1oWOFoa909xm/Kx/SIdIjFnwboZDEEejytH4=
 			</data>
 		</dict>
 		<key>Headers/TPEntity.h</key>
@@ -63,6 +75,17 @@
 			<key>hash2</key>
 			<data>
 			xwf9CLWHGkvkT4dnLwCQVvJywfQm3JpcGKXyPk8Zm4g=
+			</data>
+		</dict>
+		<key>Headers/TPLoginParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wiNy9XSqlN7utwic3JXMewvQsIg=
+			</data>
+			<key>hash2</key>
+			<data>
+			hGeWPAW+1tAVycfHGmS08OKxNl4XWNeM86TGmC9Ak2g=
 			</data>
 		</dict>
 		<key>Headers/TPMember.h</key>
@@ -87,6 +110,28 @@
 			nOWdOLerlBPjOszSuCYiYIjpItH5SrySLvOSgEm8kyQ=
 			</data>
 		</dict>
+		<key>Headers/TPMessageRetrievalParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Df+ECnCLDnjvxGnXPFaTcOjYgs0=
+			</data>
+			<key>hash2</key>
+			<data>
+			UuE0GRJArCCWCihu4g46Rsf8tfpIAI45edoXoB9rT18=
+			</data>
+		</dict>
+		<key>Headers/TPMessageSendParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CYHh/DxHbEhSWlrG0otxn3Dlsw4=
+			</data>
+			<key>hash2</key>
+			<data>
+			0c8+Pf2rUTQoLdMdEJNaPdBw3RGLSHLNZqu3qr3LPlI=
+			</data>
+		</dict>
 		<key>Headers/TPUser.h</key>
 		<dict>
 			<key>hash</key>
@@ -102,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/L7Us5LaJOqR6UBS95O4ZEGPRo=
+			KS9D2BVDzZXlL0PbAj02CdT7J+k=
 			</data>
 			<key>hash2</key>
 			<data>
-			clJThXhXmyrefiv8JilffBx7cjJnwwCHTGFBLTpcOxM=
+			YtKd2Rtnz0Gwi1cN7sbchnWM8Z/1sEr8C1lJYuPJXSk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
