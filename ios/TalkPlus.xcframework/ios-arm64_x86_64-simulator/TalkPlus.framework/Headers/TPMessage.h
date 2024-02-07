@@ -24,6 +24,7 @@
 -(NSString *)getText;
 -(NSString *)getFileUrl;
 -(NSString *)getType;
+-(NSString *)getTitle;
 -(NSString *)getParentMessageId;
 -(TPMessage *)getParentMessage;
 -(NSArray *)getMentions;

@@ -16,7 +16,7 @@
 #import "TPMessageRetrievalParams.h"
 #import "TPMessageSendParams.h"
 
-#define TALKPLUS_SDK_VERSION @"0.5.4"
+#define TALKPLUS_SDK_VERSION @"0.5.5"
 
 @protocol TPChannelDelegate <NSObject>
 @required

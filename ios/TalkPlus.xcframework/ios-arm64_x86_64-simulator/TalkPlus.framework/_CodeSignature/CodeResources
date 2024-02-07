@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/TPMessage.h</key>
 		<data>
-		ChMsbg0MWILbj/H9q7XO35Z+oP0=
+		SE4zsoxSl3XNX9Ud4hL7m6v0rBQ=
 		</data>
 		<key>Headers/TPMessageRetrievalParams.h</key>
 		<data>
-		Df+ECnCLDnjvxGnXPFaTcOjYgs0=
+		wsTc+WuIRj0MVPLyUJdJa1ifvvA=
 		</data>
 		<key>Headers/TPMessageSendParams.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		7Ohs3ccd1baZwCTbW5/+Bf6KCwg=
+		mXFui3YZdYqOuNpue84Mt7KH8Oo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ChMsbg0MWILbj/H9q7XO35Z+oP0=
+			SE4zsoxSl3XNX9Ud4hL7m6v0rBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			nOWdOLerlBPjOszSuCYiYIjpItH5SrySLvOSgEm8kyQ=
+			Gj24/yjw9eIP95L7H5PoFm+ocoDu7Ye68j49/urq9BA=
 			</data>
 		</dict>
 		<key>Headers/TPMessageRetrievalParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Df+ECnCLDnjvxGnXPFaTcOjYgs0=
+			wsTc+WuIRj0MVPLyUJdJa1ifvvA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UuE0GRJArCCWCihu4g46Rsf8tfpIAI45edoXoB9rT18=
+			vzpodFjvF1nlpVqchJqD0LrRDEADBiPcCUHIYk1emH4=
 			</data>
 		</dict>
 		<key>Headers/TPMessageSendParams.h</key>
@@ -147,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Ohs3ccd1baZwCTbW5/+Bf6KCwg=
+			mXFui3YZdYqOuNpue84Mt7KH8Oo=
 			</data>
 			<key>hash2</key>
 			<data>
-			2x2n8L2i7UPXA36lhYVYdiMMIoBSy7ic0jpQax55Ivo=
+			uiILeDcEEbAz30FStbjN552byugMymcYZjfP9hY+myc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
