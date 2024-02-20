@@ -8,6 +8,10 @@
 		<data>
 		/V1EmVQzxwns5l3wzII+L99KlKw=
 		</data>
+		<key>Headers/TPChannelQueryParams.h</key>
+		<data>
+		u/gEkeM0i45UIgy9sYQxgtpg424=
+		</data>
 		<key>Headers/TPEntity.h</key>
 		<data>
 		4vBQOKYT4Y1SjuaPDE4DckWK/RA=
@@ -38,11 +42,11 @@
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		mXFui3YZdYqOuNpue84Mt7KH8Oo=
+		Yeiim2w873GzUkXf2juUHPBM6TQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5vd6z/+US01xpeUqrHyUWmMo9h0=
+		jmTf3TYkSVkUF3t3joOxwVgZ+KQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -64,6 +68,17 @@
 			<key>hash2</key>
 			<data>
 			h3v0snz1oWOFoa909xm/Kx/SIdIjFnwboZDEEejytH4=
+			</data>
+		</dict>
+		<key>Headers/TPChannelQueryParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u/gEkeM0i45UIgy9sYQxgtpg424=
+			</data>
+			<key>hash2</key>
+			<data>
+			LyBBAwRO59TjlhpiDi5LKv2mzM4NOLeOm5Zi/Z6PF8w=
 			</data>
 		</dict>
 		<key>Headers/TPEntity.h</key>
@@ -147,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mXFui3YZdYqOuNpue84Mt7KH8Oo=
+			Yeiim2w873GzUkXf2juUHPBM6TQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			uiILeDcEEbAz30FStbjN552byugMymcYZjfP9hY+myc=
+			fRPt8VA8CPdR7AD6yGUx5QZfxsroKvxKRLf/eu5Wnfs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

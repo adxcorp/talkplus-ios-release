@@ -15,8 +15,9 @@
 #import "TPLoginParams.h"
 #import "TPMessageRetrievalParams.h"
 #import "TPMessageSendParams.h"
+#import "TPChannelQueryParams.h"
 
-#define TALKPLUS_SDK_VERSION @"0.5.5"
+#define TALKPLUS_SDK_VERSION @"0.5.6"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -172,6 +173,10 @@ __attribute__((deprecated("use login:success:failure:")));
                         success:(void (^)(TPChannel *tpChannel))successBlock
                         failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)deleteChannel:(NSString *)channelId
+             success:(void (^)(void))successBlock
+             failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)updateChannel:(TPChannel *)tpChannel
       maxMemberCount:(int)maxMemberCount
 hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
@@ -246,7 +251,7 @@ __attribute__((deprecated("use getChannelMembers:lastUser:success:failure:")));
              subcategory:(NSString *)subcategory
                  success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
                  failure:(void (^)(int errorCode, NSError *error))failureBlock
-__attribute__((deprecated("use searchChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+__attribute__((deprecated("use searchChannels:success:failure:")));
 
 -(void)searchChannelList:(TPChannel *)lastChannel
              channelName:(NSString *)channelName
@@ -256,7 +261,7 @@ __attribute__((deprecated("use searchChannels:channelName:memberIds:category:sub
               privateTag:(NSString *)privateTag
                  success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
                  failure:(void (^)(int errorCode, NSError *error))failureBlock
-__attribute__((deprecated("use searchChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+__attribute__((deprecated("use searchChannels:success:failure:")));
 
 -(void)searchChannels:(TPChannel *)lastChannel
           channelName:(NSString *)channelName
@@ -264,6 +269,11 @@ __attribute__((deprecated("use searchChannels:channelName:memberIds:category:sub
              category:(NSString *)category
           subcategory:(NSString *)subcategory
            privateTag:(NSString *)privateTag
+              success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+              failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchChannels:success:failure:")));
+
+-(void)searchChannels:(TPChannelQueryParams *)params
               success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
               failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
@@ -274,7 +284,7 @@ __attribute__((deprecated("use searchChannels:channelName:memberIds:category:sub
                    subcategory:(NSString *)subcategory
                        success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
                        failure:(void (^)(int errorCode, NSError *error))failureBlock
-__attribute__((deprecated("use searchPublicChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+__attribute__((deprecated("use searchPublicChannels:success:failure:")));
 
 -(void)searchPublicChannelList:(TPChannel *)lastChannel
                    channelName:(NSString *)channelName
@@ -284,7 +294,7 @@ __attribute__((deprecated("use searchPublicChannels:channelName:memberIds:catego
                     privateTag:(NSString *)privateTag
                        success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
                        failure:(void (^)(int errorCode, NSError *error))failureBlock
-__attribute__((deprecated("use searchPublicChannels:channelName:memberIds:category:subcategory:privateTag:success:failure:")));
+__attribute__((deprecated("use searchPublicChannels:success:failure:")));
 
 -(void)searchPublicChannels:(TPChannel *)lastChannel
                 channelName:(NSString *)channelName
@@ -293,11 +303,12 @@ __attribute__((deprecated("use searchPublicChannels:channelName:memberIds:catego
                 subcategory:(NSString *)subcategory
                  privateTag:(NSString *)privateTag
                     success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
-                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use searchPublicChannels:success:failure:")));
 
--(void)getFilteredChannelList:(NSDictionary<NSString *, NSString *> *)filter
-                      success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
-                      failure:(void (^)(int errorCode, NSError *error))failureBlock;
+-(void)searchPublicChannels:(TPChannelQueryParams *)params
+                    success:(void (^)(NSArray<TPChannel *> *tpChannels, BOOL hasNext))successBlock
+                    failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getHiddenChannelList:(TPChannel *)lastChannel
                     success:(void (^)(NSArray<TPChannel *> *tpChannels))successBlock
