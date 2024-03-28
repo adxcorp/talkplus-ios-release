@@ -38,23 +38,31 @@
 		</data>
 		<key>Headers/TPUser.h</key>
 		<data>
-		NPb60NOnPrWdXioccjb1Koq9XfU=
+		GylIxkkgsa+bDvzacqojam1bee0=
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		Yeiim2w873GzUkXf2juUHPBM6TQ=
+		8TJXO2EkD6JBPPrT/g1yFv1mviI=
+		</data>
+		<key>Headers/TalkPlusLog.h</key>
+		<data>
+		7+NllKp3p2VP6Rm14+Xs/I0sxu4=
+		</data>
+		<key>Headers/frmTalkPlus.h</key>
+		<data>
+		zO8UHi6S/yOLvyexy/4poQNFt4U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jmTf3TYkSVkUF3t3joOxwVgZ+KQ=
+		rQij3KcR9D0g01ewPYVNsKk/qWA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		AA4hFypfDYZUJtbCasPRP8LPNsU=
+		BMDZ3IJrEK8qy0KoXLNkYbSXxIM=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		Gnh6D2NxUGCTJCOsCvpZXTG5XiM=
+		yxFT1lHRJDbSfVkST7qVwlScjqE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -151,44 +159,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NPb60NOnPrWdXioccjb1Koq9XfU=
+			GylIxkkgsa+bDvzacqojam1bee0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lMQXa4a01aGSccF9U/MXyOwRukHmkDghh5w6YALtDyA=
+			0glOYk5ArvAVC3Hg9ZEGKYhdUIewQHyU1stRTUK4EPA=
 			</data>
 		</dict>
 		<key>Headers/TalkPlus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Yeiim2w873GzUkXf2juUHPBM6TQ=
+			8TJXO2EkD6JBPPrT/g1yFv1mviI=
 			</data>
 			<key>hash2</key>
 			<data>
-			fRPt8VA8CPdR7AD6yGUx5QZfxsroKvxKRLf/eu5Wnfs=
+			15/xfEILFc7nR7EGyrp92lGkG1BnvSnR00DnPAbHddE=
+			</data>
+		</dict>
+		<key>Headers/TalkPlusLog.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7+NllKp3p2VP6Rm14+Xs/I0sxu4=
+			</data>
+			<key>hash2</key>
+			<data>
+			nue9tSTXdBmrGRcaQyEKVAZ0Pk2vMGFi317RkNz1C0w=
+			</data>
+		</dict>
+		<key>Headers/frmTalkPlus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zO8UHi6S/yOLvyexy/4poQNFt4U=
+			</data>
+			<key>hash2</key>
+			<data>
+			7xFbqk6S9iY1vvBIp9Fi79cm7h0i9BgDeWW1qm3ITdc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AA4hFypfDYZUJtbCasPRP8LPNsU=
+			BMDZ3IJrEK8qy0KoXLNkYbSXxIM=
 			</data>
 			<key>hash2</key>
 			<data>
-			77BTSlsBWlONSNVM5S3W4t+QkcmD980uUkygiDwBQKc=
+			g4qXQYjGdDE4qg4TvZ70x0rKKaDIDcbj7TVhE+y4eyI=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gnh6D2NxUGCTJCOsCvpZXTG5XiM=
+			yxFT1lHRJDbSfVkST7qVwlScjqE=
 			</data>
 			<key>hash2</key>
 			<data>
-			4G8Za6GTvGTtqdu0TSVyQkqMkh22DfDLtfbB8hLwPfc=
+			x/K4auZJeew7z5i+l44JEZluEemsae8znf16bpjthA0=
 			</data>
 		</dict>
 	</dict>

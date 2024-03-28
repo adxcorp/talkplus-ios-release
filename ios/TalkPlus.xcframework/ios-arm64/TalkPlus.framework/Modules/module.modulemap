@@ -1,6 +1,4 @@
 framework module TalkPlus {
-  umbrella header "TalkPlus.h"
-  export *
-
-  module * { export * }
+    umbrella header "frmTalkPlus.h"
+    export *
 }

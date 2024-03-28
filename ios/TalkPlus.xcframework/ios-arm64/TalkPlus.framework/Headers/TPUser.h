@@ -21,7 +21,7 @@
 -(long)getCreatedAt;
 -(long)getUpdatedAt;
 -(long)getLastReadAt;
-
+-(long)getMuteExpiresAt;
 -(NSDictionary *)getData;
 
 @end

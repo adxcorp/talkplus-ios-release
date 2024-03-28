@@ -16,8 +16,9 @@
 #import "TPMessageRetrievalParams.h"
 #import "TPMessageSendParams.h"
 #import "TPChannelQueryParams.h"
+#import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"0.5.6"
+#define TALKPLUS_SDK_VERSION @"0.5.8"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -39,6 +40,10 @@
 -(void)publicMemberMuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)memberUnmuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)publicMemberUnmuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)memberBanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)publicMemberBanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)memberUnbanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)publicMemberUnbanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 @end
 
 
