@@ -18,7 +18,7 @@
 #import "TPChannelQueryParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"0.5.8"
+#define TALKPLUS_SDK_VERSION @"0.5.9"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -612,5 +612,14 @@ __attribute__((deprecated("use sendMessage:success:failure:")));
                 sound:(NSString *) sound
               success:(void (^)(TPChannel *tpChannel))successBlock
               failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+#pragma mark - iOS VoIP Remote Push Notification
+-(void)registerVoIPPushToken:(NSData *)token
+                     success:(void (^)(void))successBlock
+                     failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+- (void)handleVoIPMessage:(NSDictionary *)payload
+                  success:(void (^)(void))successBlock
+                  failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 @end
