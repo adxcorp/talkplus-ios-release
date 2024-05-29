@@ -18,7 +18,7 @@
 #import "TPChannelQueryParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"0.6.0"
+#define TALKPLUS_SDK_VERSION @"0.6.1"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -371,6 +371,11 @@ __attribute__((deprecated("use getHiddenChannels:success:failure:")));
                     success:(void (^)(TPChannel *tpChannel))successBlock
                     failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
+-(void)getBanUsersFromChannel:(TPChannel *)tpChannel
+                     lastUser:(TPUser *)lastUser
+                      success:(void (^)(NSArray<TPUser *> *tpUsers, BOOL hasNext))successBlock
+                      failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
 -(void)muteMemberToChannel:(TPChannel *)tpChannel
                     userId:(NSString *)userId
                    success:(void (^)(TPChannel *tpChannel))successBlock
@@ -402,6 +407,11 @@ __attribute__((deprecated("use getHiddenChannels:success:failure:")));
                      userIds:(NSArray<NSString *> *)userIds
                      success:(void (^)(TPChannel *tpChannel))successBlock
                      failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)getMutedChannelMembers:(TPChannel *)tpChannel
+                     lastUser:(TPMember *)lastUser
+                      success:(void (^)(NSArray<TPMember *> *tpMembers, BOOL hasNext))successBlock
+                      failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)getMutedPeers:(TPChannel *)tpChannel
             lastUser:(TPMember *)lastUser
@@ -482,6 +492,12 @@ __attribute__((deprecated("use getFileMessages:success:failure:")));
              message:(TPMessage *)tpMessage
              success:(void (^)(void))successBlock
              failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)translateMessage:(TPChannel *)tpChannel
+                message:(TPMessage *)tpMessage
+        targetLanguages:(NSArray<NSString *> *)targetLanguages
+                success:(void (^)(TPMessage *tpMessages))successBlock
+                failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)sendMessage:(TPMessageSendParams *)params
            success:(void (^)(TPMessage *tpMessage))successBlock
