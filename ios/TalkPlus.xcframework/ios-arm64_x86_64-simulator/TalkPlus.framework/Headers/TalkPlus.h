@@ -18,7 +18,7 @@
 #import "TPChannelQueryParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"0.6.1"
+#define TALKPLUS_SDK_VERSION @"0.6.2"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -496,7 +496,7 @@ __attribute__((deprecated("use getFileMessages:success:failure:")));
 -(void)translateMessage:(TPChannel *)tpChannel
                 message:(TPMessage *)tpMessage
         targetLanguages:(NSArray<NSString *> *)targetLanguages
-                success:(void (^)(TPMessage *tpMessages))successBlock
+                success:(void (^)(TPMessage *tpMessage))successBlock
                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)sendMessage:(TPMessageSendParams *)params
