@@ -1,22 +1,38 @@
 
 # talkplus-ios
 
-[![Platforms](https://img.shields.io/cocoapods/p/talkplus-ios.svg)](https://cocoapods.org/pods/talkplus-ios)
-[![CocoaPods](https://img.shields.io/cocoapods/v/talkplus-ios.svg)](https://cocoapods.org/pods/talkplus-ios)
+![Platforms](https://img.shields.io/cocoapods/p/talkplus-ios.svg)
+![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-green.svg)
+![CocoaPods](https://img.shields.io/badge/CocoaPods-compatible-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Installation
+### Installation for iOS 
 
-talkplus-ios is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+This SDK can be installed through either [`CocoaPods`](https://cocoapods.org/) or [`Swift Package Manager`](https://swift.org/package-manager/): 
 
-```ruby
-pod 'talkplus-ios'
+#### - CocoaPods
+
+Add `talkplus-ios` into your `Podfile` in Xcode as below:
+
+```bash
+target YOUR_PROJECT_TARGET do
+    pod 'talkplus-ios'
+end
 ```
 
-## Author
+Then from the command line run:
+```bash
+    pod install --repo-update
+```
 
-AD(X), support@talkplus.io
+#### - Swift Packages
 
-## License
+1. In Xcode, install `spm-talkplus-framework` by navigating to File > Add Package Dependencies....
 
-talkplus-ios is available under the MIT license. See the LICENSE file for more info.
+2. In the prompt that appears, search for the GitHub repository using URL below:
+
+```bash
+https://github.com/adxcorp/talkplus-ios-release.git
+```
+
+3. Select the version you want to use, and then click on `Add Package`
