@@ -20,4 +20,5 @@ typedef NS_ENUM(NSInteger, TPChannelFrozenType) {
 @property (strong) NSString * privateTag;
 @property (strong) NSArray <NSString *>* memberIds;
 @property (assign) TPChannelFrozenType frozenType;
+@property (assign) BOOL hasUnread;
 @end
