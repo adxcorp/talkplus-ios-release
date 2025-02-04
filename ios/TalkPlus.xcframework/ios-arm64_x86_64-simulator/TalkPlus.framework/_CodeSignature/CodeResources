@@ -8,9 +8,17 @@
 		<data>
 		/V1EmVQzxwns5l3wzII+L99KlKw=
 		</data>
+		<key>Headers/TPChannelCreateParams.h</key>
+		<data>
+		cCJ5JKV0Z3wKWUqjw7ekvPuY8Ek=
+		</data>
 		<key>Headers/TPChannelQueryParams.h</key>
 		<data>
 		yAYxiDTp9zUjyAJYlJtJFCV2N/k=
+		</data>
+		<key>Headers/TPChannelUpdateParams.h</key>
+		<data>
+		xHqfu1/v4U8n0Gga5eO/cSdqEnw=
 		</data>
 		<key>Headers/TPEntity.h</key>
 		<data>
@@ -42,7 +50,7 @@
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		eUfGx902E9sQoO96paXhpkB2Y88=
+		TnAvrikCcLOHXsAqryopzfsA8P0=
 		</data>
 		<key>Headers/TalkPlusLog.h</key>
 		<data>
@@ -54,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rKKovKPMl2sSFf5gFWbz5QD9UvA=
+		8kz3sDD19b2hcF6uy/gjqoqHUDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,6 +86,17 @@
 			h3v0snz1oWOFoa909xm/Kx/SIdIjFnwboZDEEejytH4=
 			</data>
 		</dict>
+		<key>Headers/TPChannelCreateParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cCJ5JKV0Z3wKWUqjw7ekvPuY8Ek=
+			</data>
+			<key>hash2</key>
+			<data>
+			IopcE4TjHvx+yXgeuJC38Jxm4uPp0e6jNQmTk1zx7Mg=
+			</data>
+		</dict>
 		<key>Headers/TPChannelQueryParams.h</key>
 		<dict>
 			<key>hash</key>
@@ -87,6 +106,17 @@
 			<key>hash2</key>
 			<data>
 			lhVDfE3fy091IQn5FgRf+SO+/jtRx8JX/ArQzXtEnEM=
+			</data>
+		</dict>
+		<key>Headers/TPChannelUpdateParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xHqfu1/v4U8n0Gga5eO/cSdqEnw=
+			</data>
+			<key>hash2</key>
+			<data>
+			WTIYIXvPGHe8OCQM5pqc/l1Fl0IF+TTxAQZ0tpQ941o=
 			</data>
 		</dict>
 		<key>Headers/TPEntity.h</key>
@@ -170,11 +200,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eUfGx902E9sQoO96paXhpkB2Y88=
+			TnAvrikCcLOHXsAqryopzfsA8P0=
 			</data>
 			<key>hash2</key>
 			<data>
-			OfNOXEG07GkP7HjlB9WL9nQSXL+OOjZIP9dzq5LcaME=
+			cY2RYAGBCvxzjghqmOxgkpfylhWVHw5ackZwQQNptwc=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusLog.h</key>

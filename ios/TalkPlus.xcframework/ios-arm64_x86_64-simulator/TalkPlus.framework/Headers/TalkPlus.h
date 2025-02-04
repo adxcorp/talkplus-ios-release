@@ -16,9 +16,11 @@
 #import "TPMessageRetrievalParams.h"
 #import "TPMessageSendParams.h"
 #import "TPChannelQueryParams.h"
+#import "TPChannelCreateParams.h"
+#import "TPChannelUpdateParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"0.6.4"
+#define TALKPLUS_SDK_VERSION @"1.0.0"
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -44,6 +46,7 @@
 -(void)publicMemberBanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)memberUnbanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)publicMemberUnbanned:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
+-(void)reactionUpdated:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
 @end
 
 
@@ -164,7 +167,8 @@ __attribute__((deprecated("use login:success:failure:")));
                       imageUrl:(NSString *)imageUrl
                       metaData:(NSDictionary *)metaData
                        success:(void (^)(TPChannel *tpChannel))successBlock
-                       failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                       failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use createChannel:success:failure:")));
 
 -(void)createChannelWithUserIds:(NSArray *)targetIds
                       channelId:(NSString *)channelId
@@ -179,7 +183,12 @@ __attribute__((deprecated("use login:success:failure:")));
                        imageUrl:(NSString *)imageUrl
                        metaData:(NSDictionary *)metaData
                         success:(void (^)(TPChannel *tpChannel))successBlock
-                        failure:(void (^)(int errorCode, NSError *error))failureBlock;
+                        failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use createChannel:success:failure:")));
+
+-(void)createChannel:(TPChannelCreateParams *)params
+             success:(void (^)(TPChannel *tpChannel))successBlock
+             failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)deleteChannel:(NSString *)channelId
              success:(void (^)(void))successBlock
@@ -194,6 +203,11 @@ hideMessagesBeforeJoin:(BOOL)hideMessagesBeforeJoin
          subcategory:(NSString *)subcategory
             imageUrl:(NSString *)imageUrl
             metaData:(NSDictionary *)metaData
+             success:(void (^)(TPChannel *tpChannel))successBlock
+             failure:(void (^)(int errorCode, NSError *error))failureBlock
+__attribute__((deprecated("use updateChannel:success:failure:")));
+
+-(void)updateChannel:(TPChannelUpdateParams *)params
              success:(void (^)(TPChannel *tpChannel))successBlock
              failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
