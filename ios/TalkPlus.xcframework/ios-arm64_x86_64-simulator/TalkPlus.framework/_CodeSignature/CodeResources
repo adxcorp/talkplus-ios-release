@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		TnAvrikCcLOHXsAqryopzfsA8P0=
+		UNz7I6yoM4cQQfgAe/xp+64wmT0=
 		</data>
 		<key>Headers/TalkPlusLog.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8kz3sDD19b2hcF6uy/gjqoqHUDU=
+		vBrTojxf0O6R7qRuv5+lRe0m9U0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -200,11 +200,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TnAvrikCcLOHXsAqryopzfsA8P0=
+			UNz7I6yoM4cQQfgAe/xp+64wmT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			cY2RYAGBCvxzjghqmOxgkpfylhWVHw5ackZwQQNptwc=
+			0ha7/RR3RwqDHzkgTa46d+JZDvVrQIgfgsMuVhKe0AI=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusLog.h</key>
