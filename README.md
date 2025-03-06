@@ -9,8 +9,8 @@
 ## 요구사항
 
 Klat iOS SDK 사용을 위한 최소 요구사항
-- Xcode 15.0+
-- iOS 10.0+
+- Xcode 15.3+
+- iOS 12.0+
 <br/>
 
 ## SDK 설치
