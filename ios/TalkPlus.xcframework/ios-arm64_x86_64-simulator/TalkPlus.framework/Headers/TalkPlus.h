@@ -20,7 +20,7 @@
 #import "TPChannelUpdateParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"1.0.1"
+#define TALKPLUS_SDK_VERSION @"1.0.2"
 
 @protocol TPChannelDelegate <NSObject>
 @required

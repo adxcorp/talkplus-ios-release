@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		UNz7I6yoM4cQQfgAe/xp+64wmT0=
+		b7nIfeIQhuEKEZT0ggkz29jciDU=
 		</data>
 		<key>Headers/TalkPlusLog.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vBrTojxf0O6R7qRuv5+lRe0m9U0=
+		ZDQPI9s0XDC3Ac7O8iu1jCmyZPo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,10 +77,6 @@
 	<dict>
 		<key>Headers/TPChannel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/V1EmVQzxwns5l3wzII+L99KlKw=
-			</data>
 			<key>hash2</key>
 			<data>
 			h3v0snz1oWOFoa909xm/Kx/SIdIjFnwboZDEEejytH4=
@@ -88,10 +84,6 @@
 		</dict>
 		<key>Headers/TPChannelCreateParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cCJ5JKV0Z3wKWUqjw7ekvPuY8Ek=
-			</data>
 			<key>hash2</key>
 			<data>
 			IopcE4TjHvx+yXgeuJC38Jxm4uPp0e6jNQmTk1zx7Mg=
@@ -99,10 +91,6 @@
 		</dict>
 		<key>Headers/TPChannelQueryParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yAYxiDTp9zUjyAJYlJtJFCV2N/k=
-			</data>
 			<key>hash2</key>
 			<data>
 			lhVDfE3fy091IQn5FgRf+SO+/jtRx8JX/ArQzXtEnEM=
@@ -110,10 +98,6 @@
 		</dict>
 		<key>Headers/TPChannelUpdateParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xHqfu1/v4U8n0Gga5eO/cSdqEnw=
-			</data>
 			<key>hash2</key>
 			<data>
 			WTIYIXvPGHe8OCQM5pqc/l1Fl0IF+TTxAQZ0tpQ941o=
@@ -121,10 +105,6 @@
 		</dict>
 		<key>Headers/TPEntity.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4vBQOKYT4Y1SjuaPDE4DckWK/RA=
-			</data>
 			<key>hash2</key>
 			<data>
 			xwf9CLWHGkvkT4dnLwCQVvJywfQm3JpcGKXyPk8Zm4g=
@@ -132,10 +112,6 @@
 		</dict>
 		<key>Headers/TPLoginParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wiNy9XSqlN7utwic3JXMewvQsIg=
-			</data>
 			<key>hash2</key>
 			<data>
 			hGeWPAW+1tAVycfHGmS08OKxNl4XWNeM86TGmC9Ak2g=
@@ -143,10 +119,6 @@
 		</dict>
 		<key>Headers/TPMember.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xMibQH3IaePxdGcXV9/obNbQ2yM=
-			</data>
 			<key>hash2</key>
 			<data>
 			nrYTCEVdilQ/xqHDEn8MKy/x5Ywz8XCrI92ORrdAVis=
@@ -154,10 +126,6 @@
 		</dict>
 		<key>Headers/TPMessage.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SE4zsoxSl3XNX9Ud4hL7m6v0rBQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			Gj24/yjw9eIP95L7H5PoFm+ocoDu7Ye68j49/urq9BA=
@@ -165,10 +133,6 @@
 		</dict>
 		<key>Headers/TPMessageRetrievalParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wsTc+WuIRj0MVPLyUJdJa1ifvvA=
-			</data>
 			<key>hash2</key>
 			<data>
 			vzpodFjvF1nlpVqchJqD0LrRDEADBiPcCUHIYk1emH4=
@@ -176,10 +140,6 @@
 		</dict>
 		<key>Headers/TPMessageSendParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CYHh/DxHbEhSWlrG0otxn3Dlsw4=
-			</data>
 			<key>hash2</key>
 			<data>
 			0c8+Pf2rUTQoLdMdEJNaPdBw3RGLSHLNZqu3qr3LPlI=
@@ -187,10 +147,6 @@
 		</dict>
 		<key>Headers/TPUser.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GylIxkkgsa+bDvzacqojam1bee0=
-			</data>
 			<key>hash2</key>
 			<data>
 			0glOYk5ArvAVC3Hg9ZEGKYhdUIewQHyU1stRTUK4EPA=
@@ -198,21 +154,13 @@
 		</dict>
 		<key>Headers/TalkPlus.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UNz7I6yoM4cQQfgAe/xp+64wmT0=
-			</data>
 			<key>hash2</key>
 			<data>
-			0ha7/RR3RwqDHzkgTa46d+JZDvVrQIgfgsMuVhKe0AI=
+			UD1iXqSt50YGBr5jZQxq0ffeHDQ034HR3VuRd1yPynI=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusLog.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7+NllKp3p2VP6Rm14+Xs/I0sxu4=
-			</data>
 			<key>hash2</key>
 			<data>
 			nue9tSTXdBmrGRcaQyEKVAZ0Pk2vMGFi317RkNz1C0w=
@@ -220,10 +168,6 @@
 		</dict>
 		<key>Headers/frmTalkPlus.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zO8UHi6S/yOLvyexy/4poQNFt4U=
-			</data>
 			<key>hash2</key>
 			<data>
 			7xFbqk6S9iY1vvBIp9Fi79cm7h0i9BgDeWW1qm3ITdc=
@@ -231,10 +175,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BMDZ3IJrEK8qy0KoXLNkYbSXxIM=
-			</data>
 			<key>hash2</key>
 			<data>
 			g4qXQYjGdDE4qg4TvZ70x0rKKaDIDcbj7TVhE+y4eyI=
@@ -242,10 +182,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yxFT1lHRJDbSfVkST7qVwlScjqE=
-			</data>
 			<key>hash2</key>
 			<data>
 			x/K4auZJeew7z5i+l44JEZluEemsae8znf16bpjthA0=
