@@ -1,6 +1,10 @@
 
 # Changelog
 
+### v1.0.4 (2026년 05월 19일)
+## 변경 내용
+- "searchUsers:target:method:lastUser:success:failure:" 메소드 추가
+
 ## v1.0.3 (2025년 08월 13일)
 ### 변경 내용
 - 일부 메소드에 대한 HTTP 요청 오류 수정
