@@ -20,7 +20,10 @@
 #import "TPChannelUpdateParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"1.0.3"
+#define TALKPLUS_SDK_VERSION @"1.0.4"
+
+typedef NS_ENUM(NSInteger, TPSearchMethod) { TPMethodMatch, TPMethodPrefix };
+typedef NS_ENUM(NSInteger, TPSearchTarget) { TPTargetUserID, TPTargetUserName };
 
 @protocol TPChannelDelegate <NSObject>
 @required
@@ -100,6 +103,14 @@ __attribute__((deprecated("use login:success:failure:")));
               success:(void (^)(TPUser *tpUser))successBlock
               failure:(void (^)(int errorCode, NSError *error))failureBlock
 __attribute__((deprecated("use login:success:failure:")));
+
+#pragma mark - User Search
+-(void)searchUsers:(NSString *)keyword
+            target:(TPSearchTarget)target
+            method:(TPSearchMethod)method
+          lastUser:(TPUser *)lastUser
+           success:(void (^)(NSArray<TPUser *> *users, BOOL hasNext))successBlock
+           failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 #pragma mark - User Update
 -(void)updateUserProfile:(NSString *)username
