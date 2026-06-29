@@ -15,12 +15,13 @@
 #import "TPLoginParams.h"
 #import "TPMessageRetrievalParams.h"
 #import "TPMessageSendParams.h"
+#import "TPMessageUpdateParams.h"
 #import "TPChannelQueryParams.h"
 #import "TPChannelCreateParams.h"
 #import "TPChannelUpdateParams.h"
 #import "TalkPlusLog.h"
 
-#define TALKPLUS_SDK_VERSION @"1.0.4"
+#define TALKPLUS_SDK_VERSION @"1.0.5"
 
 typedef NS_ENUM(NSInteger, TPSearchMethod) { TPMethodMatch, TPMethodPrefix };
 typedef NS_ENUM(NSInteger, TPSearchTarget) { TPTargetUserID, TPTargetUserName };
@@ -41,6 +42,7 @@ typedef NS_ENUM(NSInteger, TPSearchTarget) { TPTargetUserID, TPTargetUserName };
 -(void)publicChannelChanged:(TPChannel *)tpChannel;
 -(void)publicChannelRemoved:(TPChannel *)tpChannel;
 @optional
+-(void)messageUpdated:(TPChannel *)tpChannel message:(TPMessage *)tpMessage;
 -(void)memberMuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)publicMemberMuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
 -(void)memberUnmuted:(TPChannel *)tpChannel users:(NSArray<TPMember *> *)users;
@@ -523,6 +525,10 @@ __attribute__((deprecated("use getFileMessages:success:failure:")));
         targetLanguages:(NSArray<NSString *> *)targetLanguages
                 success:(void (^)(TPMessage *tpMessage))successBlock
                 failure:(void (^)(int errorCode, NSError *error))failureBlock;
+
+-(void)updateMessage:(TPMessageUpdateParams *)params
+             success:(void (^)(TPMessage *tpMessage))successBlock
+             failure:(void (^)(int errorCode, NSError *error))failureBlock;
 
 -(void)sendMessage:(TPMessageSendParams *)params
            success:(void (^)(TPMessage *tpMessage))successBlock

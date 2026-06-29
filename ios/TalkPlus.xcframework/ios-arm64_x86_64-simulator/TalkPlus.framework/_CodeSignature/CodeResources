@@ -44,13 +44,17 @@
 		<data>
 		CYHh/DxHbEhSWlrG0otxn3Dlsw4=
 		</data>
+		<key>Headers/TPMessageUpdateParams.h</key>
+		<data>
+		3/DyfWiNGRPlMrx+/g+mr4d/N2s=
+		</data>
 		<key>Headers/TPUser.h</key>
 		<data>
 		GylIxkkgsa+bDvzacqojam1bee0=
 		</data>
 		<key>Headers/TalkPlus.h</key>
 		<data>
-		UCGTvGjQgi1SHbllfEZZFcTz7fg=
+		aBWJpHOk6lYMNjNbmDYOkBnfngE=
 		</data>
 		<key>Headers/TalkPlusLog.h</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w64MzJw85NaUEDgNNe0KeSJUYpg=
+		e/BO1LAxR5AK0UVk8Wi5Ds5pPcs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -145,6 +149,13 @@
 			0c8+Pf2rUTQoLdMdEJNaPdBw3RGLSHLNZqu3qr3LPlI=
 			</data>
 		</dict>
+		<key>Headers/TPMessageUpdateParams.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XwlzWSMCK0UPiyOPtU436Fs1FUkNaN4B2XX5m5zFWcU=
+			</data>
+		</dict>
 		<key>Headers/TPUser.h</key>
 		<dict>
 			<key>hash2</key>
@@ -156,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O1ZvYN+vT7zHIBn1uRwNuZX7KRbWv15xQWQ8osk0YnY=
+			x+WhoDjpeKpq60RZVxCY9rJRVVVjFKE0FIbGadw3yx4=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusLog.h</key>
