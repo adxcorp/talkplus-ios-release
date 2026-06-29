@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-ios"
-  s.version = "1.0.4"
+  s.version = "1.0.5"
   s.summary = "Klat Chat SDK for iOS"
   s.license = {"type"=>"MIT"}
   s.author = "Neptune Company"
