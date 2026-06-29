@@ -1,6 +1,10 @@
 
 # Changelog
 
+### v1.0.5 (2026년 06월 29일)
+## 변경 내용
+- 메시지 수정 API 추가
+
 ### v1.0.4 (2026년 05월 19일)
 ## 변경 내용
 - "searchUsers:target:method:lastUser:success:failure:" 메소드 추가
